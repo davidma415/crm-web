@@ -62,7 +62,7 @@ footer {
   margin-top: 4px;
 }
 
-.contact-list a:visited {
+.contact-list a, a:visited {
   color: black;
 }
 
