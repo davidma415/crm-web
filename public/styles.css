@@ -81,15 +81,20 @@ footer {
   font-size: 1.5em;
 }
 
+.contact-info ul li {
+  margin: 5px;
+}
+
 .welcome {
   background: #e0dac9;
   margin: 10px 10px;
   padding: 10px 10px;
-  text-align: center;
 }
 
 .welcome h1 {
   font-size: 1.5em;
+  font-weight: 700;
+  border-bottom: 2px solid black;
 }
 
 .welcome h2 {
@@ -99,8 +104,8 @@ footer {
 
 .about-me {
   background: #e0dac9;
-  margin: 10px 10px;
-  padding: 10px 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .about-me h1 {
@@ -111,4 +116,22 @@ footer {
 
 .about-me p {
   margin: 7px 0px;
+}
+
+.edit-contact, .add-contact {
+  background: #31d8cd;
+  padding: 10px;
+  margin: 10px 10px;
+}
+
+.edit-contact h1, .add-contact h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+
+.edit-contact a {
+  margin-bottom: 8px;
+  display: block;
 }

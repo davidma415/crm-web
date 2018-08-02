@@ -1,7 +1,18 @@
 <main class='contact-info'>
-  <h1>
-    <%=@contact.first_name.capitalize%> <%=@contact.last_name.capitalize%>
-  </h1>
-  <h2><%=@contact.email%></h2>
-  <p><%=@contact.note%></p>
+  <ul>
+    <li>
+      <h1>
+        <%=@contact.full_name.titleize%>
+      </h1>
+    </li>
+    <li><%=@contact.email%></li>
+    <li><%=@contact.note%></li>
+    <li><a href="/contacts/<%= @contact.id %>/edit">Edit</a></li>
+  </ul>
+
+  <form action="/contacts/<%= @contact.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete Contact">
+  </form>
+
 </main>
