@@ -18,6 +18,12 @@ header h1 {
   background: #cecece;
   margin-bottom: 1px;
   padding: 10px;
+  transition: background 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.nav-bar li:hover {
+  background: black;
 }
 
 .nav-bar li a {
