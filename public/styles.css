@@ -118,13 +118,13 @@ footer {
   margin: 7px 0px;
 }
 
-.edit-contact, .add-contact {
+.edit-contact, .add-contact, .search-contact {
   background: #31d8cd;
   padding: 10px;
   margin: 10px 10px;
 }
 
-.edit-contact h1, .add-contact h1 {
+.edit-contact h1, .add-contact h1, .search-contact h1{
   font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 5px;

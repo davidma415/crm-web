@@ -41,10 +41,30 @@ get '/about' do
   erb :about
 end
 
+get '/search_contact' do
+  erb :search
+end
+
+get '/search' do
+  first_name = params[:first_name].downcase
+  last_name = params[:last_name].downcase
+  @contact = Contact.find_by(
+    first_name: first_name,
+    last_name: last_name
+  )
+  if @contact
+    erb :show_contact
+  else
+    raise Sinatra::NotFound
+  end
+end
+
 post '/contacts' do
+  first_name = params[:first_name].downcase
+  last_name = params[:last_name].downcase
   Contact.create(
-    first_name: params[:first_name],
-    last_name: params[:last_name],
+    first_name: first_name,
+    last_name: last_name,
     email: params[:email],
     note: params[:note]
   )
